@@ -18,18 +18,20 @@ void print(shared_ptr<Node> head) {
 
 int main()
 {
-    vector<int> v1 = {2, 4, 5, 6, 8};
-    shared_ptr<Node> head(new Node);
-    shared_ptr<Node> tail = head;
-    for(auto i : v1) {
-        shared_ptr<Node> tmp(new Node(i));
-        tail->next = tmp;
-        tail = tmp;
-    }
-    head = head->next;
-    print(head);
-    head = removeLastKthNode(head, 2);
-    print(head);
+
+// remove last k'th node
+//    vector<int> v1 = {2, 4, 5, 6, 8};
+//    shared_ptr<Node> head(new Node);
+//    shared_ptr<Node> tail = head;
+//    for(auto i : v1) {
+//        shared_ptr<Node> tmp(new Node(i));
+//        tail->next = tmp;
+//        tail = tmp;
+//    }
+//    head = head->next;
+//    print(head);
+//    head = removeLastKthNode(head, 5); // will return new head
+//    print(head);
 
 
 // print common part of two linked lists, which is ordered
