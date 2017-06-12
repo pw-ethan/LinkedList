@@ -1,10 +1,12 @@
 #ifndef NODE_H_INCLUDED
 #define NODE_H_INCLUDED
 
+#include <iostream>
+
 struct Node {
     int value;
-    Node* next;
-    Node(int val) : value(val) {}
+    std::shared_ptr<Node> next;
+    Node(int val = 0) : value(val), next(nullptr) {}
 };
 
 #endif // NODE_H_INCLUDED

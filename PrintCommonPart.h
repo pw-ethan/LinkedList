@@ -2,12 +2,7 @@
 #define PRINTCOMMONPART_H
 
 #include <memory>
-
-struct Node {
-    int value;
-    std::shared_ptr<Node> next;
-    Node(int val = 0) : value(val), next(nullptr) {}
-};
+#include "Node.h"
 
 void printCommonPart(std::shared_ptr<Node> head1, std::shared_ptr<Node> head2);
 
