@@ -19,7 +19,7 @@ void print(shared_ptr<Node> head) {
 int main()
 {
 
-// remove last k'th node
+// 2. remove last k'th node
 //    vector<int> v1 = {2, 4, 5, 6, 8};
 //    shared_ptr<Node> head(new Node);
 //    shared_ptr<Node> tail = head;
@@ -34,7 +34,7 @@ int main()
 //    print(head);
 
 
-// print common part of two linked lists, which is ordered
+// 1. print common part of two linked lists, which is ordered
 //    vector<int> v1 = {2, 4, 5, 6, 8};
 //    vector<int> v2 = {1, 2, 3, 5, 6};
 //
