@@ -7,8 +7,9 @@
 
 using namespace std;
 
-void print(shared_ptr<Node> head) {
-    shared_ptr<Node> cur = head;
+template <typename T>
+void print(shared_ptr<T> head) {
+    shared_ptr<T> cur = head;
     while(cur != nullptr) {
         cout << cur->value << " ";
         cur = cur->next;
@@ -32,6 +33,22 @@ int main()
 //    print(head);
 //    head = removeLastKthNode(head, 5); // will return new head
 //    print(head);
+
+    vector<int> v1 = {2, 4, 5, 6, 8};
+    shared_ptr<DoubleNode> head(new DoubleNode);
+    shared_ptr<DoubleNode> tail = head;
+    for(auto i : v1) {
+        shared_ptr<DoubleNode> tmp(new DoubleNode(i));
+        tail->next = tmp;
+        tmp->previous = tail;
+        tail = tmp;
+    }
+    head = head->next;
+    print(head);
+    head = removeLastKthNode(head, 5); // will return new head
+    print(head);
+// DoubleNode's dtor will not be called, because the counter of shared_ptr is not 0
+// So shared_ptr is not absolutely safe,  Memory Leaks may occur
 
 
 // 1. print common part of two linked lists, which is ordered
