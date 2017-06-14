@@ -2,6 +2,7 @@
 #define NODE_H_INCLUDED
 
 #include <iostream>
+#include <memory>
 
 struct Node {
     int value;

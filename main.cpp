@@ -5,6 +5,7 @@
 #include "PrintCommonPart.h"
 #include "RemoveLastKthNode.h"
 #include "RemoveMidNode.h"
+#include "ReverseList.h"
 
 using namespace std;
 
@@ -20,6 +21,34 @@ void print(shared_ptr<T> head) {
 
 int main()
 {
+// 4. reverse list
+//    vector<int> v1 = {1, 2, 3, 4, 5};
+//    shared_ptr<Node> head(new Node);
+//    shared_ptr<Node> tail = head;
+//    for(auto i : v1) {
+//        shared_ptr<Node> tmp(new Node(i));
+//        tail->next = tmp;
+//        tail = tmp;
+//    }
+//    head = head->next;
+//    print(head);
+//    head = ReverseList(head);
+//    print(head);
+
+//    vector<int> v1 = {2, 4, 5, 6, 8};
+//    shared_ptr<DoubleNode> head(new DoubleNode);
+//    shared_ptr<DoubleNode> tail = head;
+//    for(auto i : v1) {
+//        shared_ptr<DoubleNode> tmp(new DoubleNode(i));
+//        tail->next = tmp;
+//        tmp->previous = tail;
+//        tail = tmp;
+//    }
+//    head = head->next;
+//    print(head);
+//    head = ReverseList(head);
+//    print(head);
+
 
 // 3. remove middle node (and a/b)
 //    vector<int> v1 = {1, 2, 3, 4, 5};
