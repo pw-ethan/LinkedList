@@ -6,6 +6,7 @@
 #include "RemoveLastKthNode.h"
 #include "RemoveMidNode.h"
 #include "ReverseList.h"
+#include "ReversePart.h"
 
 using namespace std;
 
@@ -21,6 +22,25 @@ void print(shared_ptr<T> head) {
 
 int main()
 {
+
+// 5. reverse part
+//    vector<int> v1 = {1, 2, 3, 4, 5};
+//    shared_ptr<Node> head(new Node);
+//    shared_ptr<Node> tail = head;
+//    for(auto i : v1) {
+//        shared_ptr<Node> tmp(new Node(i));
+//        tail->next = tmp;
+//        tail = tmp;
+//    }
+//    head = head->next;
+//    print(head);
+//    int from, to;
+//    cin >> from >> to;
+//    head = ReversePart(head, from, to);
+//    print(head);
+
+
+
 // 4. reverse list
 //    vector<int> v1 = {1, 2, 3, 4, 5};
 //    shared_ptr<Node> head(new Node);
@@ -64,6 +84,7 @@ int main()
 //    head = RemoveByRatio(head, 3, 5);
 //    //head = RemoveMidNode(head);
 //    print(head);
+
 
 // 2. remove last k'th node
 //    vector<int> v1 = {2, 4, 5, 6, 8};
