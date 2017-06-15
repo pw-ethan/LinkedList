@@ -7,6 +7,7 @@
 #include "RemoveMidNode.h"
 #include "ReverseList.h"
 #include "ReversePart.h"
+#include "JosephusKill.h"
 
 using namespace std;
 
@@ -20,8 +21,36 @@ void print(shared_ptr<T> head) {
     cout << endl;
 }
 
+void printRing(shared_ptr<Node> head) {
+    shared_ptr<Node> cur = head->next;
+    cout << head->value << " ";
+    while(cur != head) {
+        cout << cur->value << " ";
+        cur = cur->next;
+    }
+    cout << endl;
+}
+
 int main()
 {
+
+// 6. josephus kill
+//    vector<int> v1 = {1, 2, 3, 4, 5};
+//    shared_ptr<Node> head(new Node);
+//    shared_ptr<Node> tail = head;
+//    for(auto i : v1) {
+//        shared_ptr<Node> tmp(new Node(i));
+//        tail->next = tmp;
+//        tail = tmp;
+//    }
+//    head = head->next;
+//    tail->next = head;
+//    printRing(head);
+//    head = JosephusKill(head, 3);
+//    head = JosephusKillEx(head, 3);
+//    printRing(head);
+//    head->next = nullptr;
+
 
 // 5. reverse part
 //    vector<int> v1 = {1, 2, 3, 4, 5};
